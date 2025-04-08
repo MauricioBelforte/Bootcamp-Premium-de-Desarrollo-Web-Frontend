@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="abuelo">
+            <div class="padre">
+                <h1 class="titulo">Bienvenido al Curso de Css Hojas de estilo en cascadas</h1>
+                <h2 class="blanco">Aplica aca al nieto </h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p class="blanco">Este es un parrafo con una clase</p>
+        <!-- /* No podemos tener 2 mismos id en un solo html */ -->
+        <P id="soloElemento">Selector con ID</P>
+        <p class="importante">Los estilos se aplican en casacada de arriba a abajo. Esto cambia con la especificidad
+        </p>
+        <p>La especificidad la dan los selectores:</p>
+        <p>Valor=1 Selector de tipo, pseudoelementos</p>
+        <p>Valor=10 despues selector de clase , pseudoclases</p>
+        <p>Valor=100 selector de id</p>
+        <p>Lo podemos corroborar pasando por encima con el mouse</p>
+        <a href=""> Este es un enlace heredable porque le pusimos inherit, que fuerza a heredar del padre</a>
+    </main>
+</body>
+
+</html>

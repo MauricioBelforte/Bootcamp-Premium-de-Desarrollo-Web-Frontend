@@ -1,0 +1,55 @@
+/* Este es el selector universal , se aplica a todas las etiquetas*/
+* {
+    /* 
+    Ideal para propiedades no heredables que quiero que se apliquen a todas las etiquetas
+    Ejemplo de propiedad heredable el color, el background-color.
+    Ejemplo de propiedades no heredables el margin el padding
+
+    Solucion lenta, buscar en la documentacion del MDN.
+    Si pasamos el mouse por arriba de una propiedad como color background-color nos dice que hace la propiedad y nos da el enlace a la documentacion en MDN 
+    Buscar en la documentacion donde dice inherited, si dice es que yes la propiedad es heredable
+    
+    Segunda opcion es probarlo aca en el editor y ver que pasa.
+    
+    */
+    color: pink;
+}
+
+/* Selector de etiqueta */
+body {
+    color: pink;
+    background-color: rgb(80, 80, 111);
+    /* FAMILIA DE FUENTES */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Estas son de Windows , Mac y Linux  respectivamente se van a cargar en su sistema operativo*/
+
+    /* Las serif son las fuentes que tienen patitas  */
+}
+
+
+p {
+    /* El font-family es heredable del padre (body) pero si no me gusta puedo pisarlo con otro font-family */
+    font-family: cursive;
+    color: rgb(7, 7, 84);
+    font-size: 1rem;
+    /* Siempre rem va a estar relacionado a la configuracion del tamaño de la fuente que el usuario configuro en su navegador */
+    /* rem es la unidad de fuente del navegador */
+    /* font-size: 1em; /* em ademas de estar relacionado a la configuracion del tamaño de la fuente que el usuario configuro en su navegador, depende del padre */
+
+}
+
+/* Selector de clase*/
+.blanco {
+    color: white;
+    /* Del padre */
+    width: 50%;
+    height: 100px;
+    background-color: rgb(83, 68, 49);
+}
+
+/* Selector de ID */
+
+#soloElemento {
+    background-color: black;
+    color: bisque;
+}

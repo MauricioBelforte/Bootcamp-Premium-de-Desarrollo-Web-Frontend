@@ -1,0 +1,63 @@
+/* Selector universal */
+* {
+    background-color: rgb(85, 73, 58);
+
+}
+
+/* Selector de tipo */
+h1 {
+    color: rgb(24, 47, 40);
+}
+
+/* Selector de clase */
+.blanco {
+    color: white;
+}
+
+/* Selector de ID */
+#soloElemento {
+    color: brown;
+}
+
+
+/* Selector combinador de descendientes, dejando un espaciado entre cada selector */
+/* En este caso aplica dentro de la clase .blanco que esta dentro de abuelo */
+.abuelo .blanco {
+    color: black;
+    background-color: bisque;
+}
+
+/* Si pasamos por encima con el mouse dice que hay un elemento tres puntitos ... y otro elemento 
+Significa que selecciona todos los descendientes de abuelo
+*/
+
+
+/* Selector combinador de hijos directos */
+/* Aplica solo al hijo directo de la clase de la izquierda */
+.abuelo>.titulo {
+    /* Este no funciona porque no es hijo directo */
+    background-color: rgb(255, 0, 162);
+}
+
+/* Si pasamos por encima con el mouse dice que hay un elemento y otro elemento sin los tres puntitos ...
+Porque solo selecciona el hijo directo
+ */
+.padre>.titulo {
+    /* Aplica solo al hijo directo del selector de la izquierda */
+    background-color: cornflowerblue;
+}
+
+
+p.importante {
+    /* Para pisar cualquier estilo */
+    color: blue !important;
+}
+
+
+
+
+
+a {
+    /* Fuerza a heredar la propiedad del padre, que en este caso es main, que viene por defecto en negro */
+    color: inherit
+}
