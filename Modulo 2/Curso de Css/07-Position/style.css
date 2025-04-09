@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    min-height: 500vh;
+}
+
+.container {
+    width: 90%;
+    height: 500px;
+    border: 2px solid #000;
+    margin: 80px auto;
+    position: relative;
+    /* Como este es relative el elemento hijo relative se posiciona en base a este.
+    Si este no existe el elemento hijo se posiciona en base al viewport*/
+
+}
+
+.position {
+    width: 150px;
+    height: 100px;
+    font-size: 1.3rem;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+
+    /* z-index: ; */
+}
+
+.static {
+    background-color: midnightblue;
+    position: static;
+    /* Es el position que viene por defecto, no hace nada.
+    No habilita, top, left, right , bottom */
+}
+
+.relative {
+    /* Al colocar position:relative Deja su lugar que nadie lo ocupe, pero el elemento se desplaza en base a su posicion original.
+    Cuando se coloca position:relative desbloquea top: left: bottom: right:
+    */
+    background-color: tomato;
+    position: relative;
+    /* top: ;
+    left: ;
+    bottom: ;
+    right: ; */
+    top: 200px;
+    /* right: -100px; */
+    left: -10px;
+    /* bottom: -100px; */
+    /* 
+    top: 300px;
+    left: 200px; */
+    z-index: 10;
+}
+
+.absolute {
+    /* Al colocar position:absolute , el elemento es removido del flujo natural del documento.
+    Es como si este elemento no existiera para los demas, no tiene ningun espacio reservado.
+    Este se mueve en base a su ancestro (padre) contenedor mas cercano que tenga un position diferente de static */
+    position: absolute;
+    background-color: purple;
+    top: 0px;
+    left: 200px;
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    z-index: 100;
+}
+
+.fixed {
+    /* Al colocar position:fixed sale del flujo, pero queda pegado al scroll. 
+    Se pega y se posiciona en base al viewport */
+    background-color: royalblue;
+    position: fixed;
+    top: 100px;
+    left: 80px;
+    z-index: 50;
+    /*Para darle altura al elemento*/
+}

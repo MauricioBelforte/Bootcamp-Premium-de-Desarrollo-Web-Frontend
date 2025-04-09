@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    min-height: 300vh;
+}
+
+.container {
+    width: 200vw;
+    height: 500px;
+    background-color: aquamarine;
+}
+
+
+.sticky {
+    /*El position: sticky es una mezcla entre el relative y fixed
+    Es tratado como un relative hasta que llega a un punto. Cuando llega a ese punto es tratado como fixed.
+    Se pega hasta que pasa a su padre. En este caso .container  */
+
+    position: sticky;
+    width: 140px;
+    height: 140px;
+    background-color: slateblue;
+    top: 200px;
+    /* A 200px del viewport*/
+    left: 40px;
+}
