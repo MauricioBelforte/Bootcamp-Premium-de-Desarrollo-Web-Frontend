@@ -1,35 +1,44 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
 
-body{
+body {
     font-family: Arial;
 }
 
-.element{
+.element {
+    /* Aca definimos el color base */
+    background-color: royalblue;
     margin: 80px auto;
     width: 50%;
     height: 200px;
-    background-color: royalblue;
 }
 
 
-@media (min-width:600px){
+@media (min-width:600px) {
 
-
-    .element{
-        background-color: crimson;   
+    /* Aca se aplica si el ancho no baja de 600px
+    Se aplica por encima de 600px
+    Del minimo para arriba
+    /// Como minimo 600px
+*/
+    .element {
+        background-color: crimson;
     }
 
 }
 
-@media (min-width:900px){
+@media (min-width:900px) {
 
-
-    .element{
-        background-color: #000;   
+    /* Aca se aplica si el ancho no baja de 900px.
+    Se aplica por encima de 900px.
+    Del minimo para arriba
+    /// Como minimo 900px
+    */
+    .element {
+        background-color: #000;
     }
 
 }
@@ -38,21 +47,26 @@ body{
 
 /* @media (max-width: 800px){
 
-
+    ///  Aca se ejecuta siempre y cuando el ancho no supere los 800px
+    /// Del maximo para abajo
+    /// Como maximo 800px
     .element{
         background-color: crimson;   
     }
 
 }
+*/
 
-
+/*
 @media (max-width: 500px){
 
-
-    .element{
+   /// Aca se ejecuta siempre y cuando el ancho no supere los 500px
+   /// Del maximo para abajo 
+   /// Como maximo 500px
+   .element{
         background-color: blueviolet;   
     }
 
-} */
+} 
 
-
+*/
