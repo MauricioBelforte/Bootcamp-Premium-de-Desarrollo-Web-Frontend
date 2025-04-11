@@ -74,7 +74,7 @@ body{
     .hero-pic{
         width: 45%;
         margin-bottom: 0;
-        order: 1;
+        order: 1;/*Para cambiarle el orden a las cajas*/
     }
 
     .hero-title{
