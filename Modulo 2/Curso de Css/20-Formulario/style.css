@@ -1,0 +1,125 @@
+:root {
+    --main-color: #3866f2;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5f7;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.form {
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0, 0, 0, .3);
+    text-align: center;
+}
+
+.form__title {
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.form__paragraph {
+    font-weight: 300;
+}
+
+.form__link {
+    font-weight: 400;
+    color: #000;
+}
+
+.form__container {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form__group {
+    position: relative;
+    --color: #5757577e;
+}
+
+.form__input {
+    width: 100%;
+    background: none;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #706c6c;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    /*Borde en el focus del input, es decir cuando hacemos click*/
+    border-bottom: 1px solid var(--color);
+    /*Es una linea para darle estilo moderno, despues el span la va a pisar azul en el focus*/
+}
+
+.form__input:not(:placeholder-shown)+.form__label,
+.form__input:focus+.form__label {
+    /*Mueve el label de arriba un poco mas arriba y lo pinta*/
+    /*Si no existe el placeholder, vamos a modificar el hermano adyacente. */
+    /*Tambien lo aplicamos al focus*/
+    transform: translateY(-12px) scale(.7);
+    transform-origin: top left;
+    --color: #3866f2;
+}
+
+.form__label {
+    /*Este es el nombre que movemos arriba a la izquierda*/
+    color: var(--color);
+    cursor: pointer;
+    /*Para mostrar la manito*/
+    position: absolute;
+    /*Para sacarlo del flujo*/
+    top: 0;
+    /*Para moverlo*/
+    left: 5px;
+    /*Para moverlo*/
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form__submit {
+    background-color: var(--main-color);
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form__line {
+    /*Esta es una linea que se va a poner arriba del border-bottom gris para hacer un efecto*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-color);
+    transform: scale(0);
+    /*Esto es para que desaparezca al comienzo*/
+    transform-origin: left bottom;
+    /*Para que la transformacion tenga un origen de izquierda hacia abajo*/
+    transition: transform .4s;
+}
+
+.form__input:not(:placeholder-shown)~.form__line,
+.form__input:focus~.form__line {
+    /*Agranda un poco la linea hermana*/
+    /*Si no existe el placeholder, vamos a modificar el hermano general. */
+    /*Tambien lo aplicamos al focus*/
+    transform: scale(1);
+}
