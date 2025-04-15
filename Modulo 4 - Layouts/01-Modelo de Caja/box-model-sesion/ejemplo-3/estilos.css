@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.hero{
+    color: white;
+    height: 500px;
+    background-image: 
+    linear-gradient(rgba(36 4 124 / 0.806),
+     rgba(0 0 0 / 0.8)),
+    url("https://images.unsplash.com/photo-1670974636823-1341d802d5b4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    margin-bottom: 3rem;
+    padding: .1px ;
+}
+
+
+.hero__title{
+    margin-top: 200px;
+}
+
+.titulo-1{
+    background-color: darkseagreen;
+    margin-bottom: 50px;
+}
+
+.titulo-2{
+    background-color: mediumslateblue;
+    color: white;
+    margin-top: 80px;
+}
