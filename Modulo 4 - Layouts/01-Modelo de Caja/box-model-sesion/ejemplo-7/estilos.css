@@ -24,7 +24,7 @@ body{
     background-color: purple;
     padding: 30px 5%;
 
-    position: sticky;
+    position: sticky; /*Para pegarlo luego del scroll*/
     top: 0;
 }
 
