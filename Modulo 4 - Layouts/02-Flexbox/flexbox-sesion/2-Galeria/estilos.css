@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0 0 80px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.title{
+    padding: 80px 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.flex-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1200px;
+}
+
+.flex-item{
+    flex-grow: 1;
+    width: 250px;
+    max-width: 500px;
+    margin: 0 auto;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}

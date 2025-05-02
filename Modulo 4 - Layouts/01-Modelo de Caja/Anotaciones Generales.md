@@ -47,3 +47,4 @@ Si usamos el inspector del navegador, el margen total entre los 2 es de 60px.
 ## Caso 2
 Colocamos un h1 dentro de un contenedor.Al h1 le damos un margin-top  al comienzo de la pagina. El margin se lo pone al contenedor en vez de solo al h1. Se soluciona colocando un borde o un padding 
 
+
