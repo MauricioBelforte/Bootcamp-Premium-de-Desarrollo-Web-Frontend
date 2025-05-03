@@ -1,0 +1,1 @@
+Abrimos las herramientas de desarrollador de Chrome con F12 y probamos las propiedades en vivo.

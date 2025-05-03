@@ -58,12 +58,12 @@ En el caso de definir 2 hijos con flex-grow:1, y el otro flex item en flex-grow:
 Es el caso contrario, cuando hay espacio faltante y los flex items se achican. 
 flex-shrink reparte el espacio faltante.
 Por ejemplo tenemos un contenedor en 400px y definimos 3 hijos flex items en 200px cada uno. Faltan 200px que se tienen que conseguir achicando los 3.
-Por defectO flex-shrink:1 en los 3; es decir se achican proporcionalmente. 1+1+1=3
+Por defecto flex-shrink:1 en los 3; es decir se achican proporcionalmente. 1+1+1=3
 200px / 3 = 66.6px . Que se va a achicar cada uno. Quedando cada uno en 200px-66.6= 133.33px.
 
 Si definimos uno solo de los elementos en flex-shrink:2 los 200 se van a repartir entre 4. 1+1+2=4
-200px / 4= 50px. Donde el que estaba en 2 se le restan 2/4 de 200px = 100px
-y a los otros se les restan 200px - 50px = 150px
+200px / 4= 50px. Donde el que estaba en 2 se le restan 2/4. 200px = 100px
+y a los otros se les restan 1/4. 200px - 50px = 150px
 
 
 ---
