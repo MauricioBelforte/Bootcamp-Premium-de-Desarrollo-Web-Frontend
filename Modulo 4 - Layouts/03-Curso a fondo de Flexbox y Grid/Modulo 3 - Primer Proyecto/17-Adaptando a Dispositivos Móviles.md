@@ -15,13 +15,13 @@ Como curiosidad creo el pseudoelemento
 }
 ```
 
-Creo ese pseudoelemento before para colocar la imagen de fondo ![bg-mobile.svg](images/bg-mobile.svg)que para mi gusto mejoro mucho el fondo visualmente.
+Creo ese pseudoelemento before para colocar la imagen de fondo ![bg-mobile](<Proyecto 1/images/bg-mobile.svg>) que para mi gusto mejoro mucho el fondo visualmente.
 
 
 # Creamos la version de escritorio 
 
 Modifico el before para la version de escritorio
-![bg-desktop](images/bg-desktop.svg)
+![bg-desktop](<Proyecto 1/images/bg-desktop.svg>)
 
 ```css
 @media (min-width:768px) {
