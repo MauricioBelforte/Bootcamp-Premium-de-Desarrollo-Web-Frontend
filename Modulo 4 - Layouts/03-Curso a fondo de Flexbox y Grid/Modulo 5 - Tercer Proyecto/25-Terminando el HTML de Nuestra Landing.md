@@ -1,6 +1,6 @@
 # Creamos el html del newsletter y del footer
 
-
+```html
   <section class="newsletter">
       <div class="newsletter__container container">
 
@@ -75,3 +75,5 @@
 
     </section>
   </footer>
+
+```

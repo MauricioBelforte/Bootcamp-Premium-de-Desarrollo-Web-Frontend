@@ -1,6 +1,6 @@
 # Hacemos el CSS
 
-
+```css
 .newsletter {
     background-color: var(--desaturated-blue);
     color: #fff;
@@ -107,3 +107,5 @@
     height: 20px;
     margin: auto;
 }
+
+```

@@ -1,6 +1,6 @@
 # Terminamos el media queries para newsletter y footer
 
-
+```css
     /* newsletter */
 
     .newsletter__container {
@@ -57,3 +57,5 @@
     .footer__social {
         margin: 0 ;
     }
+
+```

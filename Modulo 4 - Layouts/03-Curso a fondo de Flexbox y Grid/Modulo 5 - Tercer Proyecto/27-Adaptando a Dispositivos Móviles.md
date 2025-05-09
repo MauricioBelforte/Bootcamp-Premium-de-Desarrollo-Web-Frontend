@@ -2,6 +2,9 @@
 
 **Copiamos todo y vemos que podemos cambiar, despues eliminamos el codigo repetido**
 
+
+```css
+
 @media (min-width: 768px) {
 
     .hero {
@@ -91,3 +94,5 @@
 
 
 }
+
+```
