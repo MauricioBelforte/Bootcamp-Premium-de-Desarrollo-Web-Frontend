@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--     5. Alinear elementos en fila con Flexbox
+
+Utilizando Flexbox, crea una estructura de tres cajas alineadas horizontalmente con espacio entre ellas. Cada caja debe tener el mismo tamaño, un fondo color salmon, un padding de 20px y el texto centrado. Asegúrate de que haya un espacio de 10px entre las cajas. -->
+    <div class="flex-container">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+    </div>
+
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .box {
+            background: salmon;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>

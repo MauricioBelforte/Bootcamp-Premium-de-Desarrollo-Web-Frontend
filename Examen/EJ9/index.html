@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--     9. Mostrar alerta al hacer clic
+
+Crea un botón que al hacer clic muestre una alerta con el mensaje “Button clicked!”. 
+Usa JavaScript, asegurándote de utilizar addEventListener para capturar el evento y una arrow function para definir la acción. -->
+
+    <button id="alertBtn">Click me</button>
+
+
+    <script>
+        const boton = document.getElementById("alertBtn");
+        boton.addEventListener("click", () => {
+            alert('Button clicked!');
+        });
+    </script>
+
+
+</body>
+
+</html>

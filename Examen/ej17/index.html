@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  17. Contador de caracteres en textarea
+
+Mostrar cuántos caracteres lleva escritos el usuario -->
+
+    <textarea id="bio" maxlength="100"></textarea>
+    <p><span id="counter">0</span>/100</p>
+
+    <script>
+        const bio = document.getElementById("bio");
+        const counter = document.getElementById("counter");
+
+        bio.addEventListener("input", () => {
+            counter.textContent = bio.value.length;
+        });
+    </script>
+
+
+</body>
+
+</html>

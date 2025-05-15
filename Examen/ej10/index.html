@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--     10. Mostrar/Ocultar un div
+
+Crea un botón que al hacer clic muestre u oculte (toggle) un cuadro de 100x100px con fondo color coral. 
+Usa JavaScript, una arrow function y accede al elemento con getElementById. 
+El cuadro debe alternar su visibilidad cambiando su propiedad display entre “block” y “none”. -->
+
+
+    <button id="toggleBtn">Toggle box</button>
+    <div id="box" style="width:100px; height:100px; background:coral; margin-top:10px; display:none"></div>
+
+    <script>
+      document.getElementById("toggleBtn").onclick = () => {
+             const box = document.getElementById("box");
+             
+                box.style.display = box.style.display === "none" ? "block" : "none";
+                        
+        
+        };
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- 15. Validar formato de email
+
+Crea un formulario con un campo de entrada para un correo electrónico y un botón para enviarlo. 
+Usa JavaScript para validar que el valor ingresado contenga el carácter @. 
+Si no lo contiene, evita el envío del formulario y muestra una alerta con el mensaje “Invalid email!”. 
+Utiliza addEventListener y una arrow function para manejar el evento submit. -->
+
+<form id="emailForm">
+  <input type="email" id="email" placeholder="Email">
+  <button type="submit">Enviar</button>
+</form>
+
+<script>
+    document.getElementById("emailForm").addEventListener("submit", (event) => {
+        const emailInput = document.getElementById("email").value;
+        if (!emailInput.includes("@")) {
+            event.preventDefault(); 
+            alert("Invalid email!");
+        }
+    });
+</script>
+
+</body>
+</html>

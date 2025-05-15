@@ -1,6 +1,6 @@
 # Animaciones
 
-Inventamos un nombre en el elemento y luego lo llamamos en @keyframes
+Inventamos un nombre (En la propiedad animation-name) en el elemento, y luego lo llamamos en @keyframes
 
 .elemento{
     animation-name: cambia-color;

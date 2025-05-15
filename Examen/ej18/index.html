@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--  18. Desactivar botón si input está vacío
+
+Utilizando Javascript desactivar el botón de envío si el input está vacío. -->
+
+<input type="text" id="input">
+<button id="submitBtn" disabled>Enviar</button>
+
+<script>
+  const input = document.getElementById("input");
+  const btn = document.getElementById("submitBtn");
+
+    input.addEventListener("input", () => {
+        if (input.value.trim() === "") {
+        btn.disabled = true;
+        } else {
+        btn.disabled = false;
+        }
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  4. Layout con grilla de 3 columnas
+
+    Utilizando CSS Grid crea una grilla de 3 columnas iguales.
+ -->
+
+    <div class="grid-container">
+        <div class="item">Caja 1</div>
+        <div class="item">Caja 2</div>
+        <div class="item">Caja 3</div>
+    </div>
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .item {
+            background: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+
+
+</body>
+
+</html>

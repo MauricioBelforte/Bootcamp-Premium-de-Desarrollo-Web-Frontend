@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    11. Vista previa de input en tiempo real
+
+Crea un campo de texto que muestre en tiempo real lo que el usuario escribe, justo debajo del input. 
+Usa JavaScript con addEventListener para escuchar el evento input y una arrow function para actualizar el contenido de un elemento con el texto ingresado. -->
+
+
+    <input type="text" id="liveInput" placeholder="Type here">
+    <p>Preview: <span id="previewText"></span></p>
+
+    <script>
+        texto = document.getElementById("liveInput");
+        preview = document.getElementById("previewText");
+        texto.addEventListener("input", () => {
+            preview.textContent = texto.value;
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!--     12. Contador con botones
+
+Crea un contador numérico que se muestre dentro de un , comenzando desde 0.
+Debe haber dos botones: uno para incrementar (+) y otro para decrementar (-) el valor mostrado. 
+Usa JavaScript, el evento onclick, y arrow functions para manejar los clics. -->
+
+    <p>Count: <span id="counter">0</span></p>
+    <button id="plusBtn">+</button>
+    <button id="minusBtn">-</button>
+
+    <script>
+        let count = 0;
+
+        const plusButton = document.getElementById("plusBtn");
+        const minusButton = document.getElementById("minusBtn");
+
+        plusButton.onclick = () => {
+            count++;
+            document.getElementById("counter").textContent = count;
+        };
+
+        minusButton.onclick = () => {
+            count--;
+            document.getElementById("counter").textContent = count;
+        };
+    </script>
+
+
+</body>
+
+</html>

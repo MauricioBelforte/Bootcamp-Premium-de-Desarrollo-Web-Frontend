@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--     16. Validar coincidencia de contraseñas
+
+Crea un formulario con dos campos de contraseña: uno para ingresar la contraseña y otro para repetirla. 
+Al hacer clic en el botón de enviar, valida con JavaScript que ambas contraseñas coincidan. 
+Si no coinciden, evita el envío del formulario y muestra una alerta con el mensaje “Passwords do not match!”.
+ Usa addEventListener y una arrow function para manejar el evento submit. -->
+
+    <form id="passwordForm">
+        <input type="password" id="pass1" placeholder="Password">
+        <input type="password" id="pass2" placeholder="Repeat Password">
+        <button type="submit">Enviar</button>
+    </form>
+
+
+    <script>
+        document.getElementById("passwordForm").addEventListener("submit", (event) => {
+            const password1 = document.getElementById("pass1").value;
+            const password2 = document.getElementById("pass2").value;
+
+            if (password1 !== password2) {
+                event.preventDefault();
+                alert("Passwords do not match!");
+            }
+        });
+
+    </script>
+</body>
+
+</html>
