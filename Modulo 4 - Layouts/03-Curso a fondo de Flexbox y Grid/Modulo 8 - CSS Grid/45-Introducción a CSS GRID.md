@@ -53,3 +53,38 @@ Las lineas azules en filas las lineas rosas en columnas.
 
 ![Grid Lines](<imagenes/Grid Lines.png>) 
 
+
+La linea azul representa a la fila , la rosa representa la columna, la suma forma la grid.
+
+![Grid Lines](imagenes/GridLines2.png)
+
+Las lineas se enumeran
+
+![Lines Enumeradas](imagenes/GridLines3.png)
+
+Podemos posicionar el elemento en base al numero de lineas
+
+![Grid Lines posicionado](imagenes/GridLines4.png)
+
+
+# Grid tracks 
+
+![Grid Tracks](imagenes/GridTracks.png)
+
+Se le conoce Grid track, al espacio entre dos grid lines adyacentes, también se les conoce como filas y columnas.
+
+![Grid Tracks](<imagenes/Grid Tracks.png>)
+
+# Grid area 
+
+![Grid Area](imagenes/GridArea.png)
+
+Es el espacio entre cuatro grid lines, un grid área puede estar formado por el número que sea de celdas, pero un grid área siempre debe ser rectangular o cuadrado.
+
+![Grid Area](<imagenes/Grid Area.png>)
+
+
+Referencia: 
+
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
