@@ -124,3 +124,5 @@ El **HTML semántico** consiste en utilizar etiquetas que describen claramente e
 
 Utilizar estas etiquetas mejora la estructura y comprensión del contenido tanto para usuarios como para buscadores y tecnologías de asistencia.
 
+##
+Algunos elementos hero, cta

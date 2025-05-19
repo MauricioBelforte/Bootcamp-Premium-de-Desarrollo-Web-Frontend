@@ -1,4 +1,4 @@
-# grid-area
+# grid-area:
 
 Shorthand para grid-column: y grid-row: que se aplica sobre los hijos grid-items.
 
