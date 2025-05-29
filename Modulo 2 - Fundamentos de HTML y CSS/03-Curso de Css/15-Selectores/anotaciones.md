@@ -81,7 +81,7 @@ Ej
     content:"Soy Maury"
 }
 
-Esto crea un elemento al lado del que tenia en el hatml con esa clase .elemento 
+Esto crea un elemento al lado del que tenia en el html con esa clase .elemento 
 Le podemos colocar propiedades como display:block o flex etc, pero no lo podemos seleccionar.
 
 El content podria estar vacio tambien 
