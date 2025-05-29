@@ -318,3 +318,16 @@ Para aplicar un tema oscuro o personalizado usando `[data-theme]`, puedes agrega
 Al cambiar el valor de `data-theme`, los estilos definidos en CSS para ese tema se aplicarán automáticamente.
 
 
+# Web rapida en una hora
+
+Arrastrando nuestra carpeta con el html css y js en esta web tenemos subida nuestra web rapida.
+
+
+https://app.netlify.com/drop
+
+
+# Auditoria de performance
+
+Para ver como carga mi web tenemos esta extension.
+
+https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es

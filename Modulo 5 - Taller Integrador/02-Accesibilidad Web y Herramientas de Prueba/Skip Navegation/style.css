@@ -1,0 +1,69 @@
+/* Oculta visualmente un elemento del html pero no lo saca del orden del DOM*/
+
+/* Version copilot */
+/*
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}
+*/
+
+/*La que nos paso la profe
+
+/*
+.cloak{
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden; 
+    clip : rect(1px 1px, 1px, 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;                                                                 
+}
+*/
+
+a:focus {
+  /*Engrosamos el foco */
+  border: 3px solid blue;
+}
+
+nav, main {
+    max-width: 80%;
+    margin: 20px auto;
+    padding:20px;
+
+}
+
+nav {
+    background-color: pink
+}
+
+main {
+    background-color: rgb(141, 108, 125);
+}
+
+.cloak{
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden; 
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;  
+}
+
+.cloak:focus {
+    position: static !important;
+    height: auto !important;
+    width: auto !important;
+    overflow: visible !important;
+    clip : auto !important;
+    white-space: normal !important; 
+    background-color: yellow !important;
+}
