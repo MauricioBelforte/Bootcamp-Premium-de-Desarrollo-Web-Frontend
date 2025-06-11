@@ -72,6 +72,8 @@ Operadores de comparación:
 Ejemplo: console.log(edad >= 18) // true
 
 
+`Es sumamente recomendable usar la igualdad estricta === en vez de la igualdad == ya que por ejemplo en Javascript 2 == "2", es decir el numero 2 es igual al string 2. `
+
 ### Operadores lógicos
 
 Operadores lógicos: Son comparadores que vienen de la lógica booleana && (AND): Este operador devuelve true si ambos operandos son verdaderos. Si cualquiera de los
