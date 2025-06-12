@@ -10,7 +10,7 @@ grid-template-colums:, grid-template-rows:, grid-auto-columns: ,grid-auto-rows:;
 
 `Es mas comun usarlo en grid-template-colums:, grid-auto-columns:;`
 
-Anteriormente usabamos grid-template-columns: repeat(3,1fr) o grid-template-columns:1fr 2fr 3fr. Y con esto creabamos las filas y columnas del grid. Ahora con max-content y min-content es igual , es como una unidad de medida.
+Anteriormente usabamos grid-template-columns: repeat(3,1fr) o grid-template-columns:1fr 2fr 3fr. Y con esto creabamos las filas y columnas del grid. Ahora con max-content y min-content es igual , **es como una unidad de medida**.
 
 max-content va a crear columnas o filas con el maximo contenido posible.
 min-content va a crear columnas o filas con el minimo contenido posible.

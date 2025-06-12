@@ -2,6 +2,8 @@
 
 `Son propiedades que permite adaptar el contenido sin media queries`
 
+*Es mejor auto fit*
+
 
 # auto-fill
 
@@ -9,7 +11,7 @@ Sirve para crear tantas columnas o filas posibles, como el espacio disponible no
 
 Se utiliza en la propiedad grid-template-columns:, grid-template-rows:
 
-En este caso la vamos a usar en la funcion repeat() en vez de poner como primer argumento la cantidad colocamos auto-fill
+En este caso la vamos a usar en la funcion repeat() en vez de poner como primer argumento la cantidad colocamos auto-fill. Es decir auto-fill "le tira la pelota" al segundo argumento de la funcion repeat()
 
 Ej1: 
 
@@ -81,9 +83,10 @@ Asi sucesivamente hasta crear mas columnas de las que tenemos definidas en el ht
 `Entonces podemos utilizar una nueva propiedad que resuelve ese problema que es auto-fit.`
 
 
+
 # auto-fit
 
-Funciona exactamente igual pero soluciona el problema de las columnas extras.
+`Funciona exactamente igual pero soluciona el problema de las columnas extras.`
 Crea tantas columnas o filas que vayamos a necesitar. Las columnas y filas que esten vacias las elimina.
 
 Ej4: 

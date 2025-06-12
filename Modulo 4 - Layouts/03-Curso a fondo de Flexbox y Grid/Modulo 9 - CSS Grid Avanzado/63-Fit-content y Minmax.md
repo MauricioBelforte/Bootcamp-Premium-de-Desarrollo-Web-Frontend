@@ -64,10 +64,25 @@ Ej2:
 }
 ```
 
-![minmax(50px,300px) En la parte alta](imagenes/minmax()-2.png)
+![minmax(50px,300px) A la derecha queda blanco , porque pasa los 300px](imagenes/minmax()-2.png)
 
 
-Ej3: 
+
+Ej3:
+
+En este caso creamos 2 columnas. La primera con la funcion minmax(), la segunda 1fr. En la primer columna con minmax() definimos que no puede ser mas chico que el 50% y el maximo sea el min-content. Lo que consigue el min-content es que ocupe el ancho del texto del HTML.
+
+```css
+
+.grid {
+    grid-template-columns: minmax(50%,min-content) 1fr;
+}
+```
+
+![Ejemplo con 2 columnas y usando minmax() en la primera](imagenes/minmax()-3.png)
+
+
+Ej4: 
 
 ```css
 
